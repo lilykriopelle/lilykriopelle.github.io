@@ -40,24 +40,31 @@
       }
 
       .lose-pop-up, .instructions {
+        position: absolute;
         box-sizing: border-box;
-        padding: 20px;
         display: none;
         background: black;
         color: white;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        min-width: 350px;
-        min-height: 225px;
-        font-size: 40px;
+        max-width: 500px;
+        max-height: 250px;
+        margin: auto;
+        font-size: 35px;
         border: 10px solid white;
         text-align: center;
       }
 
+      .lose-pop-up {
+        padding-top: 45px;
+      }
+
       .lose-pop-up.active, .instructions.active {
         display: block;
+      }
+
+      @media (max-width: 600px) {
+        .lose-pop-up, .instructions {
+          font-size: 32px;
+        }
       }
 
     </style>
@@ -90,19 +97,19 @@
     </p>
 
     <div class="instructions active">
-      Press UP, DOWN, LEFT, and RIGHT to move.
-      <br>
-      Press SPACE to fire bullets.
-      <br>
-      Press 'p' to pause and to resume play.
+        Press UP, DOWN, LEFT, and RIGHT to move.
+        <br>
+        Press SPACE to fire bullets.
+        <br>
+        Press 'p' to pause and to resume play.
     </div>
 
     <div class="lose-pop-up">
-      Oh no!  You lose!
-      <br>
-      Score: <span class="final-score"></span>.
-      <br>
-      Press ENTER to play again.
+        Oh no!  You lose!
+        <br>
+        Score: <span class="final-score"></span>.
+        <br>
+        Press ENTER to play again.
     </div>
 
   </body>
