@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Asteroids</title>
+
+    <style>
+      body {
+        background: black;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        overflow: hidden;
+      }
+
+      #game-canvas {
+        width: 1000px;
+        height: 600px;
+        border: 3px solid white;
+        margin-left: 50%;
+        margin-top: 20px;
+        transform: translateX(-50%);
+      }
+
+      .instructions, .score-report  {
+        font-family: 'PT Sans', sans-serif;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 32px;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="./lib/keymaster.js"></script>
+    <script type="application/javascript" src="./lib/movingObject.js"></script>
+    <script type="application/javascript" src="./lib/util.js"></script>
+    <script type="application/javascript" src="./lib/asteroid.js"></script>
+    <script type="application/javascript" src="./lib/bullet.js"></script>
+    <script type="application/javascript" src="./lib/ship.js"></script>
+    <script type="application/javascript" src="./lib/game.js"></script>
+    <script type="application/javascript" src="./lib/gameView.js"></script>
+
+    <canvas id="game-canvas" width="1000" height="600"></canvas>
+
+    <script type="text/javascript">
+      var ctx = document.getElementById("game-canvas").getContext("2d");
+      var game = new window.Asteroids.Game();
+      var gameView = new window.Asteroids.GameView(game, ctx);
+      gameView.start();
+    </script>
+
+    <p class="score-report">
+      Current score: 0
+    </p>
+
+    <p class="instructions">
+      Press UP, DOWN, LEFT, and RIGHT to move.
+      <br>
+      Press SPACE to fire bullets.
+      <br>
+      Press 'p' to pause and to resume play.
+    </p>
+
+  </body>
+</html>
