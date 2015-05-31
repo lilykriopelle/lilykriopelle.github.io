@@ -55,7 +55,8 @@
 
       .skills {
         margin: 20px auto;
-        max-width: 650px;
+        max-width: 700px;
+        padding-left: 50px
       }
 
       .skill:first-child {
@@ -67,7 +68,7 @@
         text-align: center;
         padding-right: 20px;
         padding-top: 20px;
-        font-size: 75px;
+        font-size: 93px;
       }
 
       .projects {
@@ -123,6 +124,43 @@
         display: block;
       }
 
+      .social {
+        width: 120px;
+        margin: 20px auto;
+        border: 1px solid black;
+        border-left: 0;
+      }
+
+      .social li {
+        box-sizing: border-box;
+        float: left;
+        font-size: 10px;
+        width: 40px;
+        height: 40px;
+        background: rgba(255, 255, 255, .5);
+        border-left: 1px solid black;
+      }
+
+      .social li:hover {
+        background: rgba(255, 255, 255, .75);
+      }
+
+      .github {
+        padding: 4px;
+      }
+
+      .linkedin {
+        padding-top: 6px;
+      }
+
+      .twitter {
+        padding-top: 5px;
+      }
+
+      .twitter-pic {
+        width: 30px;
+        height: 30px;
+      }
 
       @media (max-width: 750px) {
         .hello {
@@ -131,7 +169,7 @@
         }
       }
 
-      @media (max-width: 550px) {
+      @media (max-width: 575px) {
         .hello {
           font-size: 45px;
           padding-top: 55px;
@@ -150,6 +188,23 @@
       <p>
         NYC based software engineer
       </p>
+      <ul class="social group">
+        <li class="github">
+          <a href="#">
+            <img src="github.png"/>
+          </a>
+        </li>
+        <li class="linkedin">
+          <a  href="#">
+            <img src="linkedin.png"/>
+          </a>
+        </li>
+        <li class="twitter" >
+          <a href="#">
+            <img class="twitter-pic" src="twitter.png"/>
+          </a>
+        </li>
+      </ul>
     </h1>
 
     <div class="about-me">
@@ -278,7 +333,7 @@
           </p>
         </li>
 
-        <li class="project group">
+        <!-- <li class="project group">
           <h4 class="project-header group">
             <p>
             Java Compiler (Java)
@@ -320,7 +375,7 @@
             <br><br>
             Cool.
           </p>
-        </li>
+        </li> -->
 
       </ul>
     </div>
