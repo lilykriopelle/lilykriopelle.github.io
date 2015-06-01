@@ -2,16 +2,14 @@
 
 <html>
   <head>
-    <title>Lily Riopelle</title>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand|Lobster|Montserrat:400,700|Francois+One|Abril+Fatface' rel='stylesheet' type='text/css'>    <title>Lily Riopelle</title>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/89f2f44ba07ea3fff7e561c2142813b278c2d6c6/devicon.min.css">
-
     <style>
       html, body, div, canvas, h1, h2, h3, p, ul, li {
         padding: 0;
         margin: 0;
         border: 0;
-        font-family: sans-serif;
-        background: inherit;
+        background: transparent;
       }
 
       ul {
@@ -20,6 +18,20 @@
 
       body {
         margin: auto;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+      }
+
+      a {
+        color: rgb(255,105,180);
+      }
+
+      h3 {
+        font-size: 30px;
+      }
+
+      input, textarea {
+        width: 300px;
       }
 
       .group:after {
@@ -29,13 +41,17 @@
       }
 
       .header {
+        font-weight: 700;
         box-sizing: border-box;
         text-align: center;
         height: 350px;
         width: 100%;
         padding-top: 50px;
-        background: gray;
         color: white;
+        background: gray;
+        background-image: url("http://o.homedsgn.com/wp-content/uploads/2011/04/NYC-at-Night-06.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
       }
 
       .hello {
@@ -78,14 +94,13 @@
 
       .project {
         box-sizing: border-box;
-        padding: 20px 0px;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
-        margin: 20px auto;
+        padding: 30px 0px;
+        padding-top: 0;
+        border-bottom: 3px solid black;
+        position: relative;
       }
 
       .project:first-child {
-        border-top: 0;
         margin-top: 0;
       }
 
@@ -105,6 +120,25 @@
         float: left;
       }
 
+      .view-project {
+        box-sizing: border-box;
+        background: transparent;
+        color: transparent;
+        position: absolute;
+        left: 0;
+        width: 206px;
+        height: 206px;
+        padding-top: 90px;
+        text-align: center;
+      }
+
+      .view-project:hover {
+        background: rgba(100,100,100,.75);
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
       .project-description {
         box-sizing: border-box;
         float: right;
@@ -114,20 +148,23 @@
 
       .resume {
         padding: 20px;
+        margin: auto;
         margin-top: 20px;
         display: block;
+        max-width: 650px;
       }
 
       .contact {
         padding: 20px;
-        margin-top: 20px;
+        margin: auto;
+        margin-bottom: 20px;
         display: block;
+        max-width: 650px;
       }
 
       .social {
-        width: 120px;
+        width: 132px;
         margin: 20px auto;
-        border: 1px solid black;
         border-left: 0;
       }
 
@@ -138,11 +175,11 @@
         width: 40px;
         height: 40px;
         background: rgba(255, 255, 255, .5);
-        border-left: 1px solid black;
+        transition: background .75s;
       }
 
       .social li:hover {
-        background: rgba(255, 255, 255, .75);
+        background: rgba(255, 255, 255, .8);
       }
 
       .github {
@@ -190,17 +227,17 @@
       </p>
       <ul class="social group">
         <li class="github">
-          <a href="#">
+          <a href="http://github.com/lilykriopelle/smart_cookie">
             <img src="github.png"/>
           </a>
         </li>
         <li class="linkedin">
-          <a  href="#">
+          <a  href="http://www.linkedin.com/in/riopelle">
             <img src="linkedin.png"/>
           </a>
         </li>
         <li class="twitter" >
-          <a href="#">
+          <a href="http://twitter.com/lilyriopelle">
             <img class="twitter-pic" src="twitter.png"/>
           </a>
         </li>
@@ -211,11 +248,11 @@
       <h3>A LITTLE ABOUT ME</h3>
       <!-- picture of me here -->
       <p>
-        As a left-brain/right-brain hybrid (think mathlete/theatre kid in high school),
+        As a left-brain/right-brain hybrid (think mathlete/theatre kid),
         I never thought I'd find a field that challenged me technically and creatively.
         I grew up dreading the day when I'd need to give up one of my passions.
         Luckily, I discovered programming, and fell in love with its perfect balance
-        of logic and creativity. When I'm not building cool things, I can usually be found consuming
+        of logic and creativity. When I'm not coding, I can usually be found consuming
         dangerous quantities of iced coffee and/or adventuring around my beautiful hometown, NYC.
       </p>
     </div>
@@ -271,17 +308,20 @@
             SmartCookie (Rails, Backbone.js, jQuery)
             </p>
             <div class="project-links">
-              <a href="#">GITHUB</a>
+              <a href="http://github.com/lilykriopelle/smart_cookie">GITHUB</a>
             </div>
           </h4>
-          <a class="project-thumb" href="http://www.smart-cookie.co">
-            <img class="project-preview" src="sc_pic.png" alt="" />
+
+          <a class="view-project" href="http://www.smart-cookie.co">
+            Check it out!
           </a>
 
+          <img class="project-preview" src="sc_pic.png" alt="" />
+
           <p class="project-description">
-            A collaborative recipe development platform with annotations inspired by Genius.
+            Collaborative recipe development platform with annotations inspired by Genius.
             <br><br>
-            Rails serves up a RESTful JSON API to a Backbone front end.
+            Backbone front end consumes a RESTful JSON API served up by Rails.
             <br><br>
             Gets start and end indices for annotations by reading DOM's selection object.
             <br><br>
@@ -295,15 +335,16 @@
             Asteroids (Javascript, HTML5 Canvas, jQuery)
             </p>
             <div class="project-links">
-              <a href="#">GITHUB</a>
+              <a href="http://github.com/lilykriopelle/asteroids">GITHUB</a>
             </div>
           </h4>
-          <a class="project-thumb" href="http://asteroids.lilykriopelle.com">
-            <img class="project-preview" src="asteroids_pic.png" alt="" />
+          <a class="view-project" href="http://asteroids.lilykriopelle.com">
+            Check it out!
           </a>
+          <img class="project-preview" src="asteroids_pic.png" alt="" />
 
           <p class="project-description">
-            Browser game inspired by the arcade classic
+            Browser game inspired by everyone's favorite arcade classic
             <br><br>
             Randomly generates irregular polygonal asteroid geometry.
             <br><br>
@@ -317,19 +358,20 @@
             ActiveRecord Lite (Ruby)
             </p>
             <div class="project-links">
-              <a href="#">GITHUB</a>
+              <a href="http://www.github.com/lilykriopelle/active_record_lite">GITHUB</a>
             </div>
           </h4>
-          <a class="project-thumb" href="http://www.github.com/lilykriopelle/active_record_lite">
-            <img class="project-preview" src="activerecord_pic.png" alt="" />
+          <a class="view-project" href="http://www.github.com/lilykriopelle/active_record_lite">
+            Check it out!
           </a>
+          <img class="project-preview" src="activerecord_pic.png" alt="" />
 
           <p class="project-description">
             Ruby ORM inspired by the Rails ActiveRecord Library
             <br><br>
             Generates SQL queries based on naming conventions to replicate Rails associations.
             <br><br>
-              Utilizes advanced Ruby language features, such as meta-programming and reflection.
+            Utilizes advanced Ruby language features, such as meta-programming and reflection.
           </p>
         </li>
 
@@ -381,12 +423,22 @@
     </div>
 
     <div class="resume">
-      Want to know more?  Check out my <a href="#">resume</a>.
+      <h3>Want to know more?  </h3>
+      <br>
+      Check out my <a href="LilyRiopelleResume.pdf">resume</a>.
+
     </div>
 
     <div class="contact">
-      Feel free to <a href="#">get in touch!</a>
-    </div>
-
+      <h3>Get in touch!</h3>
+      <a id="foxyform_embed_link_673402" href="http://www.foxyform.com/">foxyform</a>
+      <script type="text/javascript">
+      (function(d, t){
+         var g = d.createElement(t),
+             s = d.getElementsByTagName(t)[0];
+         g.src = "http://www.foxyform.com/js.php?id=673402&sec_hash=d7dc9d348ff&width=350px";
+         s.parentNode.insertBefore(g, s);
+      }(document, "script"));
+      </script>
   </body>
 </html>
