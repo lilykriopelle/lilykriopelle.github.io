@@ -58,8 +58,11 @@ span {
   text-transform: uppercase;
 }
 
+main {
+  padding: 50px;
+}
+
 .about-me {
-  margin: 40px auto;
   max-width: 650px;
 }
 
@@ -74,7 +77,6 @@ span {
 .skills {
   margin: 20px auto;
   max-width: 700px;
-  padding-left: 50px
 }
 
 .skill:first-child {
@@ -91,7 +93,7 @@ span {
 
 .projects {
   margin: 20px auto;
-  max-width: 650px;
+  max-width: 700px;
 }
 
 .project {
@@ -144,7 +146,7 @@ span {
 .project-description {
   box-sizing: border-box;
   float: right;
-  width: 400px;
+  width: 350px;
   padding-left: 20px;
 }
 
@@ -201,16 +203,29 @@ span {
   height: 30px;
 }
 
-@media (max-width: 750px) {
+.form {
+  background: yellow;
+}
+
+@media (max-width: 800px) {
   .hello {
     font-size: 75px;
     padding-top: 45px;
   }
+
+  .skills-list {
+    width: 500px;
+    margin: auto;
+  }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 625px) {
   .hello {
     font-size: 45px;
     padding-top: 55px;
+  }
+
+  .project-description {
+    width: 275px;
   }
 }

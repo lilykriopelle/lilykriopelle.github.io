@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="shortcut icon" href="http://faviconist.com/icons/11f77ffc487ee3e09fc447ef4b27eb93/favicon.ico" />
     <link href='http://fonts.googleapis.com/css?family=Quicksand|Lobster|Montserrat:400,700|Francois+One|Abril+Fatface' rel='stylesheet' type='text/css'>    <title>Lily Riopelle</title>
     <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/89f2f44ba07ea3fff7e561c2142813b278c2d6c6/devicon.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('.email').submit(function (e) {
+            e.preventDefault();
+            $(e.target).find(".text-input").val("");
+            debugger
+        });
+      });
+    </script>
+
+
   </head>
   <body>
     <h1 class="header">
@@ -34,207 +45,225 @@
       </ul>
     </h1>
 
-    <div class="about-me">
-      <h3>A LITTLE ABOUT ME</h3>
-      <!-- picture of me here -->
-      <p>
-        As a left-brain/right-brain hybrid (think mathlete/theatre kid),
-        I never thought I'd find a field that challenged me technically and creatively.
-        I grew up dreading the day when I'd need to give up one of my passions.
-        Luckily, I discovered programming, and fell in love with its perfect balance
-        of logic and creativity.
-      </p>
+    <main>
 
-      <p>
-        I currently teach Full-Stack Web Development at <a href="http://appacademy.io">App Academy</a>.
-        When I'm not teaching or coding, I can usually be found consuming
-        dangerous quantities of iced coffee and/or adventuring around my beautiful hometown, NYC.
-      </p>
-    </div>
+      <div class="about-me">
+        <h3>A LITTLE ABOUT ME</h3>
+        <!-- picture of me here -->
+        <p>
+          As a left-brain/right-brain hybrid (think mathlete/theatre kid),
+          I never thought I'd find a field that challenged me technically and creatively.
+          I grew up dreading the day when I'd need to give up one of my passions.
+          Luckily, I discovered programming, and fell in love with its perfect balance
+          of logic and creativity.
+        </p>
 
-    <div class="skills">
-      <h3>MY FAVORITE TOOLS</h3>
-      <ul class="skills-list group">
-        <li class="skill">
-          <i class="devicon-ruby-plain-wordmark colored"></i>
-        </li>
-        <li class="skill">
-          <i class="devicon-rails-plain-wordmark colored"></i>
-        </li>
-        <li class="skill">
-          <i class="devicon-java-plain-wordmark colored"></i>
-        </li>
-        <li class="skill">
-          <i class="devicon-python-plain-wordmark colored"></i>
-        </li>
-        <li class="skill">
-          <i class="devicon-postgresql-plain-wordmark colored"></i>
-        </li>
-        <li class="skill">
-          <i class="devicon-javascript-plain colored"></i>
-        </li>
-        <li class="skill">
-          <i class="devicon-jquery-plain-wordmark colored"></i>
-        </li>
-        <li class="skill">
-          <i class="devicon-backbonejs-plain-wordmark colored"></i>
-        </li>
-        <li class="skill">
-          <i class="devicon-html5-plain-wordmark colored"></i>
-        </li>
-        <li class="skill">
-          <i class="devicon-css3-plain-wordmark colored"></i>
-        </li>
-        <li class="skill">
-          <i class="devicon-git-plain-wordmark colored"></i>
-        </li>
-        <li class="skill">
-          <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
-        </li>
-      </ul>
-    </div>
+        <p>
+          I currently teach Full-Stack Web Development at <a href="http://appacademy.io">App Academy</a>.
+          When I'm not teaching or coding, I can usually be found consuming
+          dangerous quantities of iced coffee and/or adventuring around my beautiful hometown, NYC.
+        </p>
+      </div>
 
-    <div class="projects">
-      <h3>SOME THINGS I'VE MADE</h3>
-      <ul class="projects-list group">
-        <li class="project group">
-          <h4 class="project-header group">
-            <p>
-            SmartCookie (Rails, Backbone.js, jQuery)
+      <div class="skills">
+        <h3>MY FAVORITE TOOLS</h3>
+        <ul class="skills-list group">
+          <li class="skill">
+            <i class="devicon-ruby-plain-wordmark colored"></i>
+          </li>
+          <li class="skill">
+            <i class="devicon-rails-plain-wordmark colored"></i>
+          </li>
+          <li class="skill">
+            <i class="devicon-java-plain-wordmark colored"></i>
+          </li>
+          <li class="skill">
+            <i class="devicon-python-plain-wordmark colored"></i>
+          </li>
+          <li class="skill">
+            <i class="devicon-postgresql-plain-wordmark colored"></i>
+          </li>
+          <li class="skill">
+            <i class="devicon-javascript-plain colored"></i>
+          </li>
+          <li class="skill">
+            <i class="devicon-jquery-plain-wordmark colored"></i>
+          </li>
+          <li class="skill">
+            <i class="devicon-backbonejs-plain-wordmark colored"></i>
+          </li>
+          <li class="skill">
+            <i class="devicon-html5-plain-wordmark colored"></i>
+          </li>
+          <li class="skill">
+            <i class="devicon-css3-plain-wordmark colored"></i>
+          </li>
+          <li class="skill">
+            <i class="devicon-git-plain-wordmark colored"></i>
+          </li>
+          <li class="skill">
+            <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+          </li>
+        </ul>
+      </div>
+
+      <div class="projects">
+        <h3>SOME THINGS I'VE MADE</h3>
+        <ul class="projects-list group">
+          <li class="project group">
+            <h4 class="project-header group">
+              <p>
+              SmartCookie (Rails, Backbone.js, jQuery)
+              </p>
+              <div class="project-links">
+                <a href="http://github.com/lilykriopelle/smart_cookie">GITHUB</a>
+              </div>
+            </h4>
+
+            <a class="view-project" href="http://www.smart-cookie.co">
+              Check it out!
+            </a>
+
+            <img class="project-preview" src="images/sc_pic.png" alt="" />
+
+            <p class="project-description">
+              <span>Collaborative recipe development platform with annotations inspired by Genius.</span>
+              <br><br>
+              Backbone front end consumes a RESTful JSON API served up by Rails.
+              <br><br>
+              Gets start and end indices for annotations by reading DOM's selection object.
+              <br><br>
+              Supports nested and overlapping annotations.
             </p>
-            <div class="project-links">
-              <a href="http://github.com/lilykriopelle/smart_cookie">GITHUB</a>
-            </div>
-          </h4>
+          </li>
 
-          <a class="view-project" href="http://www.smart-cookie.co">
-            Check it out!
-          </a>
+          <li class="project group">
+            <h4 class="project-header group">
+              <p>
+              Asteroids (Javascript, HTML5 Canvas, jQuery)
+              </p>
+              <div class="project-links">
+                <a href="http://github.com/lilykriopelle/asteroids">GITHUB</a>
+              </div>
+            </h4>
 
-          <img class="project-preview" src="images/sc_pic.png" alt="" />
+            <a class="view-project" href="http://www.lilykriopelle.com/asteroids">
+              Check it out!
+            </a>
 
-          <p class="project-description">
-            <span>Collaborative recipe development platform with annotations inspired by Genius</span>
-            <br><br>
-            Backbone front end consumes a RESTful JSON API served up by Rails.
-            <br><br>
-            Gets start and end indices for annotations by reading DOM's selection object.
-            <br><br>
-            Supports nested and overlapping annotations.
-          </p>
-        </li>
+            <img class="project-preview" src="images/asteroids_pic.png" alt="" />
 
-        <li class="project group">
-          <h4 class="project-header group">
-            <p>
-            Asteroids (Javascript, HTML5 Canvas, jQuery)
+            <p class="project-description">
+              <span>Everyone's favorite arcade classic, coded for the browser.</span>
+              <br><br>
+              Randomly generates irregular polygonal asteroid geometry.
+              <br><br>
+              Uses trigonometry and transformational geometry to approximate physics and render objects.
             </p>
-            <div class="project-links">
-              <a href="http://github.com/lilykriopelle/asteroids">GITHUB</a>
-            </div>
-          </h4>
+          </li>
 
-          <a class="view-project" href="http://www.lilykriopelle.com/asteroids">
-            Check it out!
-          </a>
+          <li class="project group">
+            <h4 class="project-header group">
+              <p>
+              ActiveRecord Lite (Ruby)
+              </p>
+              <div class="project-links">
+                <a href="http://www.github.com/lilykriopelle/active_record_lite">GITHUB</a>
+              </div>
+            </h4>
+            <a class="view-project" href="http://www.github.com/lilykriopelle/active_record_lite">
+              Check it out!
+            </a>
+            <img class="project-preview" src="images/activerecord_pic.png" alt="" />
 
-          <img class="project-preview" src="images/asteroids_pic.png" alt="" />
-
-          <p class="project-description">
-            <span>Browser game inspired by everyone's favorite arcade classic</span>
-            <br><br>
-            Randomly generates irregular polygonal asteroid geometry.
-            <br><br>
-            Uses trigonometry and transformational geometry to approximate physics and render objects.
-          </p>
-        </li>
-
-        <li class="project group">
-          <h4 class="project-header group">
-            <p>
-            ActiveRecord Lite (Ruby)
+            <p class="project-description">
+              <span>Ruby ORM recreating the funtionality of Rails' ActiveRecord</span>
+              <br><br>
+              Generates SQL queries based on naming conventions to replicate Rails associations.
+              <br><br>
+              Utilizes advanced Ruby language features, such as meta-programming and reflection.
             </p>
-            <div class="project-links">
-              <a href="http://www.github.com/lilykriopelle/active_record_lite">GITHUB</a>
-            </div>
-          </h4>
-          <a class="view-project" href="http://www.github.com/lilykriopelle/active_record_lite">
-            Check it out!
-          </a>
-          <img class="project-preview" src="images/activerecord_pic.png" alt="" />
+          </li>
 
-          <p class="project-description">
-            <span>Ruby ORM inspired by the Rails ActiveRecord Library</span>
-            <br><br>
-            Generates SQL queries based on naming conventions to replicate Rails associations.
-            <br><br>
-            Utilizes advanced Ruby language features, such as meta-programming and reflection.
-          </p>
-        </li>
+          <!-- <li class="project group">
+            <h4 class="project-header group">
+              <p>
+              Java Compiler (Java)
+              </p>
+              <div class="project-links">
+                <a href="#">GITHUB</a>
+              </div>
+            </h4>
+            <a class="project-thumb" href="http://www.github.com/lilykriopelle/compiler">
+              <img class="project-preview" src="compiler_pic.png" alt="" />
+            </a>
 
-        <!-- <li class="project group">
-          <h4 class="project-header group">
-            <p>
-            Java Compiler (Java)
+            <p class="project-description">
+              Compiler for a subset of the Java Programming Language
+              <br><br>
+              Optimizations include common subexpression elimination and polymorphic inline caching.
+              <br><br>
+              Supported language features include inheritance and interfaces.
             </p>
-            <div class="project-links">
-              <a href="#">GITHUB</a>
-            </div>
-          </h4>
-          <a class="project-thumb" href="http://www.github.com/lilykriopelle/compiler">
-            <img class="project-preview" src="compiler_pic.png" alt="" />
-          </a>
+          </li>
 
-          <p class="project-description">
-            Compiler for a subset of the Java Programming Language
-            <br><br>
-            Optimizations include common subexpression elimination and polymorphic inline caching.
-            <br><br>
-            Supported language features include inheritance and interfaces.
-          </p>
-        </li>
+          <li class="project group">
+            <h4 class="project-header group">
+              <p>
+              Ray Tracer with Photon Mapping (C++)
+              </p>
+              <div class="project-links">
+                <a href="#">GITHUB</a>
+              </div>
+            </h4>
+            <a class="project-thumb" href="http://www.github.com/lilykriopelle/ray_tracer">
+              <img class="project-preview" src="raytracer_pic.png" alt="" />
+            </a>
 
-        <li class="project group">
-          <h4 class="project-header group">
-            <p>
-            Ray Tracer with Photon Mapping (C++)
+            <p class="project-description">
+              Ray Tracer
+              <br><br>
+              Photon mapping -> caustics.
+              <br><br>
+              Cool.
             </p>
-            <div class="project-links">
-              <a href="#">GITHUB</a>
-            </div>
-          </h4>
-          <a class="project-thumb" href="http://www.github.com/lilykriopelle/ray_tracer">
-            <img class="project-preview" src="raytracer_pic.png" alt="" />
-          </a>
+          </li> -->
 
-          <p class="project-description">
-            Ray Tracer
-            <br><br>
-            Photon mapping -> caustics.
-            <br><br>
-            Cool.
-          </p>
-        </li> -->
+        </ul>
+      </div>
 
-      </ul>
-    </div>
+      <div class="resume">
+        <h3>WANT TO KNOW MORE?</h3>
+        <br>
+         <a href="documents/LilyRiopelleResume.pdf">Check out</a> my resume, or <a href="LilyRiopelleResume.pdf" download="LilyRiopelleResume">download</a> it here!
+      </div>
 
-    <div class="resume">
-      <h3>WANT TO KNOW MORE?</h3>
-      <br>
-       <a href="documents/LilyRiopelleResume.pdf">Check out</a> my resume, or <a href="LilyRiopelleResume.pdf" download="LilyRiopelleResume">download</a> it here!
-    </div>
+      <div class="contact">
+        <form class="email" action="mailer.php" method="post">
+        <p>Name:</p>
+        <input type="text" class="text-input" name="name" />
+        <p>E-mail:</p>
+        <input type="text" class="text-input" name="email" />
+        <p>Subject:</p>
+        <input type="text" class="text-input" name="subject" />
+        <p>Message:</p>
+        <textarea name="message" class="text-input"></textarea></p>
+        <input class="send" type="submit" value="Send">
+        </form>
+      </div>
 
-    <div class="contact">
-      <h3>GET IN TOUCH!</h3>
-      <a id="foxyform_embed_link_673402" href="http://www.foxyform.com/">foxyform</a>
-      <script type="text/javascript">
-      (function(d, t){
-         var g = d.createElement(t),
-             s = d.getElementsByTagName(t)[0];
-         g.src = "http://www.foxyform.com/js.php?id=673402&sec_hash=d7dc9d348ff&width=350px";
-         s.parentNode.insertBefore(g, s);
-      }(document, "script"));
-      </script>
+      <!-- <div class="contact">
+        <h3>GET IN TOUCH!</h3>
+        <a id="foxyform_embed_link_673402" href="http://www.foxyform.com/">foxyform</a>
+        <script type="text/javascript">
+        (function(d, t){
+           var g = d.createElement(t),
+               s = d.getElementsByTagName(t)[0];
+           g.src = "http://www.foxyform.com/js.php?id=673402&sec_hash=d7dc9d348ff&width=350px";
+           s.parentNode.insertBefore(g, s);
+        }(document, "script"));
+        </script>
+      </div> -->
+    </main>
   </body>
 </html>
