@@ -67,6 +67,10 @@ span {
   margin-bottom: 20px;
 }
 
+.about-me p {
+  margin-bottom: 20px;
+}
+
 .skills {
   margin: 20px auto;
   max-width: 700px;
