@@ -152,13 +152,13 @@ main {
 }
 
 .resume {
-  margin: 20px;
+  margin: 20px auto;
   display: block;
   max-width: 700px;
 }
 
 .contact {
-  margin: 20px;
+  margin: 20px auto;
   display: block;
   max-width: 700px;
 }
