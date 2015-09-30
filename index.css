@@ -146,23 +146,19 @@ main {
 
 .project-description {
   box-sizing: border-box;
-  float: right;
-  width: 350px;
+  float: left;
+  width: 475px;
   padding-left: 20px;
 }
 
 .resume {
-  padding: 20px;
-  margin: auto;
-  margin-top: 20px;
+  margin: 20px;
   display: block;
   max-width: 650px;
 }
 
 .contact {
-  padding: 20px;
-  margin: auto;
-  margin-bottom: 20px;
+  margin: 20px;
   display: block;
   max-width: 650px;
 }
@@ -228,5 +224,10 @@ main {
 
   .project-description {
     width: 275px;
+  }
+
+  .skills-list {
+    width: 350px;
+    margin: auto;
   }
 }
