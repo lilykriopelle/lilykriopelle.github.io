@@ -60,11 +60,25 @@ span {
 
 main {
   padding: 50px;
+  padding-top: 0;
 }
 
 .about-me {
   max-width: 700px;
   margin: auto;
+}
+
+.about-me section {
+  float: left;
+  width: 360px;
+  padding-left: 20px;
+}
+
+.me {
+  width: 300px;
+  height: auto;
+  display: block;
+  float: left;
 }
 
 .about-me h3 {
@@ -206,6 +220,11 @@ main {
 
 .form {
   background: yellow;
+}
+
+.about-me, .skills, .projects, .contact {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 800px) {
