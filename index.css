@@ -45,7 +45,7 @@ span {
   width: 100%;
   padding: 20px;
   color: white;
-  background: aquamarine;
+  background: rgb(35,35,35);
   background-size: cover;
   background-repeat: no-repeat;
 }
