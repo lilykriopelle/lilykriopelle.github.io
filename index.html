@@ -18,37 +18,39 @@
   </head>
   <body>
     <h1 class="header">
-      <p class="hello">
-        Lily Riopelle
-      </p>
+      <img class="me" src="images/lily.jpg" alt="" />
 
-      <p>
-        NYC based software engineer
-      </p>
-      <ul class="social group">
-        <li class="github">
-          <a href="http://github.com/lilykriopelle">
-            <img src="images/github.png"/>
-          </a>
-        </li>
-        <li class="linkedin">
-          <a  href="http://www.linkedin.com/in/riopelle">
-            <img src="images/linkedin.png"/>
-          </a>
-        </li>
-        <li class="twitter" >
-          <a href="http://twitter.com/lilyriopelle">
-            <img class="twitter-pic" src="images/twitter.png"/>
-          </a>
-        </li>
-      </ul>
+     <p class="hello">
+       Lily Riopelle
+     </p>
+
+     <p>
+       NYC based software engineer
+     </p>
+     <ul class="social group">
+       <li class="github">
+         <a href="http://github.com/lilykriopelle">
+           <img src="images/github.png"/>
+         </a>
+       </li>
+       <li class="linkedin">
+         <a  href="http://www.linkedin.com/in/riopelle">
+           <img src="images/linkedin.png"/>
+         </a>
+       </li>
+       <li class="twitter" >
+         <a href="http://twitter.com/lilyriopelle">
+           <img class="twitter-pic" src="images/twitter.png"/>
+         </a>
+       </li>
+     </ul>
     </h1>
 
     <main>
 
       <div class="about-me">
         <h3>A LITTLE ABOUT ME</h3>
-        <!-- picture of me here -->
+
         <p>
           As a left-brain/right-brain hybrid (think mathlete/theatre kid),
           I never thought I'd find a field that challenged me technically and creatively.
@@ -74,9 +76,6 @@
             <i class="devicon-rails-plain-wordmark colored"></i>
           </li>
           <li class="skill">
-            <i class="devicon-java-plain-wordmark colored"></i>
-          </li>
-          <li class="skill">
             <i class="devicon-python-plain-wordmark colored"></i>
           </li>
           <li class="skill">
@@ -84,6 +83,9 @@
           </li>
           <li class="skill">
             <i class="devicon-javascript-plain colored"></i>
+          </li>
+          <li class="skill">
+            <i class="devicon-react-original-wordmark colored"></i>
           </li>
           <li class="skill">
             <i class="devicon-jquery-plain-wordmark colored"></i>
@@ -112,7 +114,7 @@
           <li class="project group">
             <h4 class="project-header group">
               <p>
-              SmartCookie (Rails, Backbone.js, jQuery)
+                SmartCookie (Rails, Backbone.js, jQuery)
               </p>
               <div class="project-links">
                 <a href="http://github.com/lilykriopelle/smart_cookie">GITHUB</a>
@@ -139,7 +141,7 @@
           <li class="project group">
             <h4 class="project-header group">
               <p>
-              Asteroids (Javascript, HTML5 Canvas, jQuery)
+                Asteroids (Javascript, HTML5 Canvas, jQuery)
               </p>
               <div class="project-links">
                 <a href="http://github.com/lilykriopelle/asteroids">GITHUB</a>
@@ -158,6 +160,31 @@
               Randomly generates irregular polygonal asteroid geometry.
               <br><br>
               Uses trigonometry and transformational geometry to approximate physics and render objects.
+            </p>
+          </li>
+
+          <li class="project group">
+            <h4 class="project-header group">
+              <p>
+                Mello (Rails, React/Flux)
+              </p>
+              <div class="project-links">
+                <a href="http://github.com/lilykriopelle/ReacTrello">GITHUB</a>
+              </div>
+            </h4>
+
+            <a class="view-project" href="http://melloreact.herokuapp.com">
+              Check it out!
+            </a>
+
+            <img class="project-preview" src="images/mello_pic.png" alt="" />
+
+            <p class="project-description">
+              <span>A project management tool with intuitive UI built with Rails and React.</span>
+              <br><br>
+              React/Flux front-end consumes a JSON API served up by Rails for a seamless single-page user experience.
+              <br><br>
+              Uses ReactDnD to achieve fluid drag-and-drop user interactions.
             </p>
           </li>
 
@@ -184,49 +211,24 @@
             </p>
           </li>
 
-          <!-- <li class="project group">
-            <h4 class="project-header group">
-              <p>
-              Java Compiler (Java)
-              </p>
-              <div class="project-links">
-                <a href="#">GITHUB</a>
-              </div>
-            </h4>
-            <a class="project-thumb" href="http://www.github.com/lilykriopelle/compiler">
-              <img class="project-preview" src="compiler_pic.png" alt="" />
-            </a>
-
-            <p class="project-description">
-              Compiler for a subset of the Java Programming Language
-              <br><br>
-              Optimizations include common subexpression elimination and polymorphic inline caching.
-              <br><br>
-              Supported language features include inheritance and interfaces.
-            </p>
-          </li>
-
           <li class="project group">
             <h4 class="project-header group">
               <p>
-              Ray Tracer with Photon Mapping (C++)
+              Static Sites! (React, HTML5, CSS3, jQuery, AWS)
               </p>
-              <div class="project-links">
-                <a href="#">GITHUB</a>
-              </div>
             </h4>
-            <a class="project-thumb" href="http://www.github.com/lilykriopelle/ray_tracer">
-              <img class="project-preview" src="raytracer_pic.png" alt="" />
-            </a>
+            <img class="project-preview" src="images/static_site.png" alt="" />
 
             <p class="project-description">
-              Ray Tracer
+              <span>Custom-Built Static Sites for All Occasions</span>
               <br><br>
-              Photon mapping -> caustics.
+              When I'm not building web apps, I sometimes design and build static
+              sites for individuals, events, and companies.
               <br><br>
-              Cool.
+              If you need a website, reach out for an up to date portfolio of my
+              web design work.
             </p>
-          </li> -->
+          </li>
 
         </ul>
       </div>
@@ -237,31 +239,11 @@
          <a href="documents/LilyRiopelleResume.pdf">Check out</a> my resume, or <a href="LilyRiopelleResume.pdf" download="LilyRiopelleResume">download</a> it here!
       </div>
 
-      <!-- <div class="contact">
-        <form class="email" action="mailer.php" method="post">
-        <p>Name:</p>
-        <input type="text" class="text-input" name="name" />
-        <p>E-mail:</p>
-        <input type="text" class="text-input" name="email" />
-        <p>Subject:</p>
-        <input type="text" class="text-input" name="subject" />
-        <p>Message:</p>
-        <textarea name="message" class="text-input"></textarea></p>
-        <input class="send" type="submit" value="Send">
-        </form>
-      </div> -->
-
       <div class="contact">
         <h3>GET IN TOUCH!</h3>
-        <a id="foxyform_embed_link_673402" href="http://www.foxyform.com/">foxyform</a>
-        <script type="text/javascript">
-        (function(d, t){
-           var g = d.createElement(t),
-               s = d.getElementsByTagName(t)[0];
-           g.src = "http://www.foxyform.com/js.php?id=673402&sec_hash=d7dc9d348ff&width=350px";
-           s.parentNode.insertBefore(g, s);
-        }(document, "script"));
-        </script>
+        <p>
+          Feel free to email me at lilykriopelle (at) gmail (dot) com.
+        </p>
       </div>
     </main>
   </body>

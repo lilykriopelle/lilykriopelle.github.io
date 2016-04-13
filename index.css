@@ -42,28 +42,38 @@ span {
   font-weight: 700;
   box-sizing: border-box;
   text-align: center;
-  height: 350px;
   width: 100%;
-  padding-top: 50px;
+  padding: 20px;
   color: white;
-  background: gray;
-  background-image: url("http://o.homedsgn.com/wp-content/uploads/2011/04/NYC-at-Night-06.jpg");
+  background: rgb(35,35,35);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .hello {
-  padding-top: 25px;
-  font-size: 100px;
+  font-size: 80px;
   text-transform: uppercase;
 }
 
 main {
   padding: 50px;
+  padding-top: 0;
 }
 
 .about-me {
   max-width: 700px;
+  margin: auto;
+}
+
+.about-me section {
+  float: left;
+}
+
+.me {
+  width: 130px;
+  border-radius: 50%;
+  height: auto;
+  display: block;
   margin: auto;
 }
 
@@ -90,6 +100,10 @@ main {
   padding-right: 20px;
   padding-top: 20px;
   font-size: 93px;
+}
+
+.skill div {
+  width: 100px;
 }
 
 .projects {
@@ -165,8 +179,21 @@ main {
 
 .social {
   width: 132px;
-  margin: 20px auto;
+  margin: auto;
+  margin-top: 20px;
   border-left: 0;
+}
+
+.social > li:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  overflow: hidden;
+}
+
+.social > li:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
 }
 
 .social li {
@@ -204,22 +231,31 @@ main {
   background: yellow;
 }
 
+.about-me, .skills, .projects, .contact {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 @media (max-width: 800px) {
   .hello {
     font-size: 75px;
-    padding-top: 45px;
   }
 
   .skills-list {
     width: 500px;
     margin: auto;
   }
+
+  .project-description {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+
 }
 
 @media (max-width: 625px) {
   .hello {
     font-size: 45px;
-    padding-top: 55px;
   }
 
   .project-description {
