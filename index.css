@@ -51,7 +51,7 @@ span {
 }
 
 .hello {
-  font-size: 80px;
+  font-size: 127px;
   text-transform: uppercase;
 }
 
@@ -70,11 +70,15 @@ main {
 }
 
 .me {
-  width: 130px;
+  /*width: 102px;
+  margin-bottom: -8px;*/
+
+  width: 120px;
+  margin-bottom: -16px;
+
   border-radius: 50%;
   height: auto;
-  display: block;
-  margin: auto;
+  display: inline;
 }
 
 .about-me h3 {
@@ -90,6 +94,11 @@ main {
   max-width: 700px;
 }
 
+.skills-list {
+  margin: auto;
+  margin-top: 20px;
+}
+
 .skill:first-child {
   padding-left: 0;
 }
@@ -97,9 +106,12 @@ main {
 .skill {
   float: left;
   text-align: center;
-  padding-right: 20px;
-  padding-top: 20px;
-  font-size: 93px;
+  padding-right: 40px;
+  font-size: 100px;
+}
+
+.skill div {
+  width: 100px;
 }
 
 .skill div {
